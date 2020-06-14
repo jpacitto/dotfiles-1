@@ -74,6 +74,9 @@ nnoremap ; :
 nnoremap : ;
 " map <Leader> <Plug>(easymotion-prefix) 
 
+" Command mode remaps
+command NTT :NERDTreeToggle
+
 
 " mappings for coc
 nmap <silent> <leader>lp <Plug>(coc-diagnostic-prev)
