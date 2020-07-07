@@ -76,6 +76,7 @@ nnoremap : ;
 
 " Command mode remaps
 command NTT :NERDTreeToggle
+command F :Files
 
 
 " mappings for coc
@@ -92,6 +93,7 @@ nnoremap <silent> K :call <SID>show_documentation()<CR> "function at bottom
 
 " Trigger a highlight in the appropriate direction when pressing these keys for the quick scope plugin
 let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
+let g:termdebug_wide=1 "force term debug to load in vertical configuration
 
 " code to set the font for vim
 if has("gui_running")
