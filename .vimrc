@@ -78,7 +78,7 @@ nnoremap : ;
 command NTT :NERDTreeToggle
 command F :Files
 
-
+let mapleader=" " "space as a leader key (default is backspace)
 " mappings for coc
 nmap <silent> <leader>lp <Plug>(coc-diagnostic-prev)
 nmap <silent> <leader>ln <Plug>(coc-diagnostic-next)
