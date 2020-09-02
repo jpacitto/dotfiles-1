@@ -65,6 +65,8 @@ set updatetime=250 "for git gutter, so when a change is made we see it faster th
 
 set hidden "added this so that coc will work properly
 set signcolumn=yes
+
+packadd termdebug "load the termdebug package (gdb debuggind)
 " Quicker window movement
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
@@ -77,6 +79,9 @@ nnoremap : ;
 " Command mode remaps
 command NTT :NERDTreeToggle
 command F :Files
+command TN :tabnew
+command TR :tabnext "tab right
+command TL :tabprev "tab left
 
 let mapleader=" " "space as a leader key (default is backspace)
 " mappings for coc
@@ -94,7 +99,6 @@ nnoremap <silent> K :call <SID>show_documentation()<CR> "function at bottom
 " Trigger a highlight in the appropriate direction when pressing these keys for the quick scope plugin
 let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
 let g:termdebug_wide=1 "force term debug to load in vertical configuration
-
 " code to set the font for vim
 if has("gui_running")
 		if has("gui_gtk2")
