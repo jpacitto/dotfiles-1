@@ -81,8 +81,6 @@ nnoremap : ;
 command NTT :NERDTreeToggle
 command F :Files
 command TN :tabnew
-command TR :tabnext "tab right
-command TL :tabprev "tab left
 
 let mapleader=" " "space as a leader key (default is backspace)
 " mappings for coc
