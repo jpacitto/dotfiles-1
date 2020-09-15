@@ -3,7 +3,6 @@ Plug 'https://github.com/joshdick/onedark.vim' "colorscheme
 Plug 'morhetz/gruvbox' "colorcheme
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim' " fuzzy finder (searching)
-Plug 'https://github.com/itchyny/lightline.vim' "colored mode line at the bottom
 Plug 'https://github.com/scrooloose/nerdtree' "filesystem window
 Plug 'Xuyuanp/nerdtree-git-plugin' "git flags for nerdtree (above)
 Plug 'airblade/vim-gitgutter' "sidebar notifications when you've modified a line
