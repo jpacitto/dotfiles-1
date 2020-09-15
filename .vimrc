@@ -14,6 +14,8 @@ Plug 'sheerun/vim-polyglot' "syntax for a lot of languages
 Plug 'neoclide/coc.nvim', {'branch': 'release'} "intellisense for vim
 Plug 'tpope/vim-surround' "easy delete, change, add surroundings in pairs
 Plug 'Raimondi/delimitMate' "auto close parentheses, brackets, quotes
+Plug 'tpope/vim-fugitive' "built in git support
+Plug 'vim-airline/vim-airline' "tells you what branch you're in
 call plug#end()
 
 if (empty($TMUX))
