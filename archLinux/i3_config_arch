@@ -180,8 +180,12 @@ bar {
         status_command i3status
 }
 
-exec_always --no-startup-id feh --bg-scale ~/Downloads/w2.jpg
+# programs to be run on startup
+exec_always --no-startup-id ~/.fehbg 
+#this was the old code instead of ~/.fehbg: feh --bg-scale ~/Downloads/w2.jpg
 exec_always --no-startup-id xcompmgr -cCfF
+
+# below is for window borders
 for_window [class=".*"] border pixel 0
 
 gaps inner 20
