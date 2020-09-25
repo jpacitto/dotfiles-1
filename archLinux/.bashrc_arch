@@ -1,0 +1,21 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+alias ls='ls --color=auto'
+alias ll='ls -la'
+alias vv='vim ~/.vimrc'
+alias work='~/dotfiles/work_config.sh'
+
+PS1='[\u@\h \W]\$ '
+
+export XRDM_DIR=~/.Xresource.d
+export XRDM_FONT_DIR=$XRDM_DIR/fonts
+export XRDM_COLOR_DIR=$XRDM_DIR/colors
+export XRDM_PRESET_DIR=$XRDM_DIR/presets
+export XRDM_PROGRAM_DIR=$XRDM_DIR/programs
+
+source xrdm
