@@ -21,3 +21,5 @@ export XRDM_PRESET_DIR=$XRDM_DIR/presets
 export XRDM_PROGRAM_DIR=$XRDM_DIR/programs
 
 source xrdm
+# change this so that exiting vim in alacritty will clear the screen...
+export TERM=xterm-256color
