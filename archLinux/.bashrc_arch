@@ -14,12 +14,5 @@ parse_git_branch() {
 }
 PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
 
-export XRDM_DIR=~/.Xresource.d
-export XRDM_FONT_DIR=$XRDM_DIR/fonts
-export XRDM_COLOR_DIR=$XRDM_DIR/colors
-export XRDM_PRESET_DIR=$XRDM_DIR/presets
-export XRDM_PROGRAM_DIR=$XRDM_DIR/programs
-
-source xrdm
 # change this so that exiting vim in alacritty will clear the screen...
 export TERM=xterm-256color
