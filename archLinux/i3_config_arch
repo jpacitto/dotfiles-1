@@ -178,8 +178,11 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
 		position top
-        status_command i3status
+        status_command i3blocks
 		font pango:JetBrains Mono Medium 12
+		colors {
+		  background #1f2226
+		}
 }
 
 # programs to be run on startup
