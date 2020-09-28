@@ -182,6 +182,10 @@ bar {
 		font pango:JetBrains Mono Medium 12
 		colors {
 		  background #1f2226
+		  focused_workspace #98c379 #98c379 #000000
+		  active_workspace #333333 #333333 #888888
+		  inactive_workspace #abb2bf #333333 #abb2bf
+		  urgent_workspace #e06c75 #e06c75 #abb2bf
 		}
 }
 
