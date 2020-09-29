@@ -35,11 +35,11 @@ markup=oone
 # The second parameter overrides the mixer selection
 # See the script for details.
 
-[volume]
+#[volume]
 #label=♪
-label=VOL
-interval=once
-signal=10
+#label=VOL
+#interval=once
+#signal=10
 #STEP=5%
 
 # Memory usage
@@ -52,41 +52,41 @@ separator=false
 interval=5
 color=#98c379
 
-[memory]
-label=SWAP
-instance=swap
-separator=false
-interval=30
+#[memory]
+#label=SWAP
+#instance=swap
+#separator=false
+#interval=30
 
 # Disk usage
 #
 # The directory defaults to $HOME if the instance is not specified.
 # The script may be called with a optional argument to set the alert
 # (defaults to 10 for 10%).
-[disk]
-label=HOME
-DIR=/
-interval=30
+#[disk]
+#label=HOME
+#DIR=/
+#interval=30
 
 # Network interface monitoring
 #
 # If the instance is not specified, use the interface used for default route.
 # The address can be forced to IPv4 or IPv6 with -4 or -6 switches.
-[iface]
+#[iface]
 #IFACE=wlan0
-color=#00FF00
-interval=10
-separator=false
+#color=#00FF00
+#interval=10
+#separator=false
 
 [wifi]
 #INTERFACE=wlp3s0
-label=wifi:
-interval=10
-separator=false
+#label=wifi:
+#interval=10
+#separator=false
 
-[bandwidth]
+#[bandwidth]
 #INTERFACE=eth0
-interval=5
+#interval=5
 
 # CPU usage
 #
@@ -100,17 +100,17 @@ min_width=CPU 100.00%
 color=#61afef
 separator=false
 
-[load_average]
-label=LOAD
-interval=10
+#[load_average]
+#label=LOAD
+#interval=10
 
 # Battery indicator
 #
 # The battery instance defaults to 0.
-[battery]
-label=BAT
+#[battery]
+#label=BAT
 #label=⚡
-interval=30
+#interval=30
 
 # Date Time
 #
