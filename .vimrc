@@ -29,6 +29,7 @@ if (empty($TMUX))
                 set termguicolors
         endif
 endif
+"if you don't have this, alacritty won't display vim colorschemes
 if &term == "alacritty"
         let &term = "xterm-256-color"
 endif
@@ -40,9 +41,10 @@ colorscheme onedark
 set number "show line numbers
 set relativenumber "when combined with above, show relative numbers except for the current line
 set ruler                                                                                                                                                                                    
+set ttymouse=xterm2 "so that you can use the mouse to resize splits with alacritty
 set laststatus=2 "always display the status line even if there's only one window
 set mouse=a
-set hlsearch
+set hlsearch " highlight search
 set expandtab
 set ignorecase "case insensitive search, except when using capital letters
 set smartcase
@@ -70,6 +72,7 @@ set updatetime=250 "for git gutter, so when a change is made we see it faster th
 
 set hidden "added this so that coc will work properly
 set signcolumn=yes
+set termwinscroll=10000
 
 packadd termdebug "load the termdebug package (gdb debuggind)
 " Quicker window movement
