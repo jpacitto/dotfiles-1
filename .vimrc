@@ -10,7 +10,7 @@ Plug 'tomtom/tcomment_vim' "shortcuts for commenting out lines based on language
 Plug 'Lokaltog/vim-easymotion' "jumping around the file more easily using unique identifiers
 Plug 'unblevable/quick-scope' "highlights unique letters in a line so that you can use f and t more effectively
 Plug 'sheerun/vim-polyglot' "syntax for a lot of languages
-" Plug 'neoclide/coc.nvim', {'branch': 'release'} "intellisense for vim
+Plug 'neoclide/coc.nvim', {'branch': 'release'} "intellisense for vim
 Plug 'tpope/vim-surround' "easy delete, change, add surroundings in pairs
 Plug 'Raimondi/delimitMate' "auto close parentheses, brackets, quotes
 Plug 'tpope/vim-fugitive' "built in git support
