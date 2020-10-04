@@ -190,7 +190,7 @@ bar {
 }
 
 # programs to be run on startup
-exec_always --no-startup-id ~/.fehbg 
+exec_always --no-startup-id ~/.fehbg # Set up the wallpaper. Modify .fehbg if you want to change this
 #this was the old code instead of ~/.fehbg: feh --bg-scale ~/Downloads/w2.jpg
 exec_always --no-startup-id xcompmgr -cCfF
 
@@ -198,4 +198,4 @@ exec_always --no-startup-id xcompmgr -cCfF
 for_window [class=".*"] border pixel 0
 
 gaps inner 40
-gaps outer 40
+gaps outer 10

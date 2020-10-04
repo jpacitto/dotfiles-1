@@ -36,12 +36,13 @@ endif
 
 syntax on "enable syntax highlighting
 colorscheme onedark
-"colorscheme gruvbox
+" colorscheme gruvbox
+set background=dark
 
 set number "show line numbers
 set relativenumber "when combined with above, show relative numbers except for the current line
 set ruler                                                                                                                                                                                    
-set ttymouse=xterm2 "so that you can use the mouse to resize splits with alacritty
+set ttymouse=sgr "so that you can use the mouse to resize splits with alacritty
 set laststatus=2 "always display the status line even if there's only one window
 set mouse=a
 set hlsearch " highlight search
