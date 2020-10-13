@@ -34,7 +34,8 @@ if &term == "alacritty"
         let &term = "xterm-256-color"
 endif
 
-syntax on "enable syntax highlighting
+syntax enable "enable syntax highlighting
+" filetype plugin indent on 
 colorscheme onedark
 " colorscheme gruvbox
 set background=dark
@@ -102,6 +103,9 @@ nmap <silent> <leader>lr <Plug>(coc-references)
 
 nmap <leader>lr <Plug>(coc-rename)
 nnoremap <silent> K :call <SID>show_documentation()<CR> "function at bottom
+
+" in visual mode, p will delete selection and paste implicit register
+vnoremap <leader>p "_dP
 
 " Trigger a highlight in the appropriate direction when pressing these keys for the quick scope plugin
 let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
