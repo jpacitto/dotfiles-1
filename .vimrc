@@ -15,6 +15,7 @@ Plug 'tpope/vim-surround' "easy delete, change, add surroundings in pairs
 Plug 'Raimondi/delimitMate' "auto close parentheses, brackets, quotes
 Plug 'tpope/vim-fugitive' "built in git support
 Plug 'vim-airline/vim-airline' "tells you what branch you're in
+Plug 'kshenoy/vim-signature' "displaying marks
 call plug#end()
 
 if (empty($TMUX))
