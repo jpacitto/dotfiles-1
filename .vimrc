@@ -85,6 +85,7 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 nnoremap ; :
 nnoremap : ;
+nnoremap <C-A> G$vgg
 " map <Leader> <Plug>(easymotion-prefix) 
 
 " Command mode remaps
@@ -111,6 +112,8 @@ vnoremap <leader>p "_dP
 " Trigger a highlight in the appropriate direction when pressing these keys for the quick scope plugin
 let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
 let g:termdebug_wide=1 "force term debug to load in vertical configuration
+" show hidden files in nerd tree
+let NERDTreeShowHidden=1
 " code to set the font for vim
 if has("gui_running")
 		if has("gui_gtk2")
