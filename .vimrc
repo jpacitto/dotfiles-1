@@ -16,6 +16,7 @@ Plug 'Raimondi/delimitMate' "auto close parentheses, brackets, quotes
 Plug 'tpope/vim-fugitive' "built in git support
 Plug 'vim-airline/vim-airline' "tells you what branch you're in
 Plug 'kshenoy/vim-signature' "displaying marks
+Plug 'mattn/emmet-vim' "displaying marks
 call plug#end()
 
 if (empty($TMUX))
@@ -39,6 +40,8 @@ syntax enable "enable syntax highlighting
 " filetype plugin indent on 
 colorscheme onedark
 " colorscheme gruvbox
+set list
+set listchars=tab:>-
 set background=dark
 
 set number "show line numbers
@@ -55,7 +58,7 @@ set smartcase
 "tab settings for linux kernel, but instead of 8 columns uses only 4
 set tabstop=4
 set softtabstop=4
-set noexpandtab "hitting tab in insert mode will apply the appropriate number of spaces
+" set noexpandtab "hitting tab in insert mode will apply the appropriate number of spaces
 set shiftwidth=4
 set backspace=indent,eol,start "otherwise can't backspace past the character at which insert mode was opened
 set autoindent
@@ -90,6 +93,7 @@ nnoremap <C-A> G$vgg
 
 " Command mode remaps
 command NTT :NERDTreeToggle
+command NTM :NERDTreeMirror
 command F :Files
 command TN :tabnew
 
