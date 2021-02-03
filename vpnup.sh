@@ -78,7 +78,8 @@ if [ $EUID != 0 ]; then
     exit $?
 fi
 
-# timestamp
+# timestamp, visual break
+echo "===================================================================" >> "${OCLOG}" 2>&1
 echo "`date`: Script ${0} starting." >> "${OCLOG}" 2>&1
 
 # first job: make a copy of /etc/resolv.conf since this file gets
@@ -127,13 +128,16 @@ fi
 pidofoc=`pidof openconnect`
 echo "`date`: Running openconnect." >> "${OCLOG}" 2>&1
 if [ "$pidofoc" == "" ]; then
+	# echo "Please enter your password: "
 	if [ -z "$PW" ]; then
+		# True if $PW is empty
 		${OPENCONNECTEXE} -b -s "${VPNSCRIPT}" \
 						--user="${VPNUSER}" \
 						--authgroup="${VPNGRP}" \
 						--interface="tun1" \
 						"${VPNURL}" >> "${OCLOG}" 2>&1
 	else
+		# Otherwise, we're sending the plaintext password to the script
 		echo "${PW}" | ${OPENCONNECTEXE} -b -s "${VPNSCRIPT}" \
 							--user="${VPNUSER}" \
 							--passwd-on-stdin \
@@ -149,7 +153,7 @@ fi
 sleep 3
 
 # if you want, you can optionally show the new IP info to the user
-# ip address show tun1
+ip address show tun1
 
 # and log same info
 ip address show tun1 &>> "${OCLOG}"

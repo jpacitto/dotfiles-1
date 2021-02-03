@@ -47,5 +47,9 @@ if [[ -f /tmp/resolv.conf ]]; then
 	cp /tmp/resolv.conf /etc
 fi
 
+# adding this to add the gateway route back because it gets removed for some reason?
+echo "/sbin/route add -net 0.0.0.0 gw 10.0.2.2 enp0s3"
+/sbin/route add -net 0.0.0.0 gw 10.0.2.2 enp0s3
+
 echo "`date`: ${0} script ending successfully." >> "${OCLOG}" 2>&1
 
