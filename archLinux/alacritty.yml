@@ -1,15 +1,15 @@
 font:
-  size: 12
+  size: 11.5
   normal: 
-    family: JetBrains Mono Medium
+    family: JetBrains Mono
     style: Regular
 
   bold:
-    family: JetBrains Mono Medium
+    family: JetBrains Mono
     style: Bold
 
   italic:
-    family: JetBrains Mono Medium
+    family: JetBrains Mono
     style: Italic
 
 # Colors (One Dark)
