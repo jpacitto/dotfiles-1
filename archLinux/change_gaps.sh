@@ -21,10 +21,11 @@ elif [[ $# -eq 2 ]]; then # default to using the first and second args
 	outer=$2
 fi
 
-echo "i3: Setting inner gap to $inner and outer gap to $outer"
-
+echo "Creating backup config at ~/.config/i3/config.bak"
 cd ~/.config/i3
 cp config config.bak #make our own backup 
+
+echo "i3: Setting inner gap to $inner and outer gap to $outer"
 
 sed -E "/gaps inner/s/[0-9]+/$inner/" -i config --follow-symlinks
 sed -E "/gaps outer/s/[0-9]+/$outer/" -i config --follow-symlinks
